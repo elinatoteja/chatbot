@@ -27,7 +27,7 @@ if prompt := st.chat_input("What is up?"):
     st.session_state.messages.append({"role": "user", "content": prompt})
     with st.chat_message("user"):
         st.markdown(prompt)
-with st.chat_message("assistant"):
+    with st.chat_message("assistant"):
         pinecone_context = get_similar_context(prompt)
         response = st.write_stream(streaming_question_answering(prompt, pinecone_context))
     st.session_state.messages.append({"role": "assistant", "content": response})
