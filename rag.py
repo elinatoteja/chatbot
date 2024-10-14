@@ -1,4 +1,4 @@
-mport os
+import os
 import base64
 import requests
 
@@ -75,6 +75,7 @@ def get_similar_context(question: str):
     similar_content = content_extractor(similar_chunks)
 
     return similar_content
+    
 def streaming_question_answering(query_question: str, context_text: str,  template: str = COMMON_TEMPLATE):
     prompt = ChatPromptTemplate.from_template(template)
     model = get_model()
