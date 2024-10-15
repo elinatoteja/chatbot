@@ -39,9 +39,9 @@ client = OpenAI(api_key=os.environ["OPENAI_API_KEY"])
 
 def get_openai_embeddings(text: str) -> list[float]:
     response = client.embeddings.create(input=f"{text}", model=TEXT_MODEL)
-
     return response.data[0].embedding
-    # function query similar chunks
+
+# function query similar chunks
 def query_response(query_embedding, k = 1, namespace_ = NAMESPACE_KEY):
     query_response = index.query(
         namespace=namespace_,
@@ -59,7 +59,8 @@ def content_extractor(similar_data):
     # get the text out
     text_content = [sub_content["metadata"]["text"] for sub_content in top_values]
     return " ".join(text_content)
-    def get_model():
+    
+def get_model():
     model = ChatOpenAI(model=QA_MODEL, api_key=os.environ["OPENAI_API_KEY"])
     return model
 
