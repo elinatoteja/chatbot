@@ -3,7 +3,7 @@ import streamlit as st
 from rag import QA_MODEL, streaming_question_answering, get_similar_context
 
 FIRST_MESSAGE = {"role": "assistant", "content": "Hello there! How can I help you?"}
-IMAGE_ADDRESS = "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freepik.com%2Ffree-photos-vectors%2Fspecial-needs-logo&psig=AOvVaw2bBSDvvDZ1Lq7c0aOhkpon&ust=1740098545736000&source=images&cd=vfe&opi=89978449&ved=0CBYQjRxqFwoTCNiU0bGC0YsDFQAAAAAdAAAAABAE"
+IMAGE_ADDRESS = "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.muscogee.k12.ga.us%2Fabout-us-clone%2Ffamilies-students%2Ftransportation-clone%2Fspecial-needs&psig=AOvVaw2soQ0tQaYCmxndVsLKU4bI&ust=1740098634461000&source=images&cd=vfe&opi=89978449&ved=0CBYQjRxqFwoTCLjQiNuC0YsDFQAAAAAdAAAAABAE"
 
 # set the title
 st.title("Child Supporter 👩‍🍼")
