@@ -2,8 +2,7 @@ from openai import OpenAI
 import streamlit as st
 from rag import QA_MODEL, streaming_question_answering, get_similar_context
 
-FIRST_MESSAGE = {"role": "assistant", "content": "Hello there!!!!, I am a highly trained child supportive bot. You can ask me any queries about the child care."}
-IMAGE_ADDRESS = "https://upworthyscience.com/media-library/a-boy-playing-with-ipal-a-social-robot.jpg?id=24321363&width=2000&height=1500&quality=85&coordinates=200%2C0%2C200%2C0"
+FIRST_MESSAGE = {"role": "assistant", "content": "Hello there! How can I help you?"}
 
 # set the title
 st.title("Child Supporter 👩‍🍼")
