@@ -6,7 +6,7 @@ FIRST_MESSAGE = {"role": "assistant", "content": "Hello there! How can I help yo
 IMAGE_ADDRESS = "https://img.freepik.com/free-vector/autism-ribbon-campaign_24877-82161.jpg?t=st=1740012450~exp=1740016050~hmac=7508370bc994bfae10416fe222c2c05e607ff5aa2aad44227e7204cd7ca833c7&w=1380"
 
 # set the title
-st.title("Supporter Chatbot")
+st.title("Special Needs Assistive Chatbot")
 # set the image
 st.image(IMAGE_ADDRESS, caption = 'Child Supporter')
 st.subheader("Chat with Us")
